@@ -12,6 +12,7 @@ ul {
   margin: 0;
   padding: 0;
 }
+
 li {
   list-style-type: none;
 }
@@ -19,6 +20,12 @@ li {
 a {
   text-decoration: none;
 }
+
+.icon {
+  width:10px;
+  height:10px;
+}
+
 .navbar a,.publications a {
   color: rgb(15, 20, 25);
 }
@@ -48,12 +55,28 @@ a {
 
 .actions a {
   color: rgb(83, 100, 113);
-  border-radius: 10%;
+  border-radius: 8px 8px;
 }
 
-.actions a.ReplyShare:hover {
+.actions a.Reply:hover, .actions a.Share:hover {
   background-color: rgba(29, 155, 240, 0.1);
   color: rgba(29, 155, 240, 1);
+}
+
+.actions a.Share::after{
+  content: "100";
+}
+
+.actions a.Reply::after{
+  content: "20";
+}
+
+.actions a.Like::after{
+  content: "2k";
+}
+
+.actions a.Retzeet::after{
+  content: "400";
 }
 
 .actions a.Retzeet:hover {
