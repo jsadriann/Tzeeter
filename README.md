@@ -1,6 +1,6 @@
 # Tzeeter - Página Inicial
 
-Este repositório contém o código-fonte da página inicial do Tzeeter, uma plataforma de microblogs inspirada no design da página inicial do Twitter.
+Este repositório contém o código-fonte da página inicial do Tzeeter, uma página inspirada no design da home page do Twitter.
 
 ## Tecnologias Utilizadas
 

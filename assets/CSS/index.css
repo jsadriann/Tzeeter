@@ -1,57 +1,97 @@
-/* Reset CSS*/
-*,
-*::before,
-*::after {
+
+body {
+  background-color: white;
+  color:  rgb(15, 20, 25);
+}
+
+p {
+  display: inline;
+}
+
+ul {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+li {
+  list-style-type: none;
 }
 
-/* Reset para body e elementos principais */
-html, body {
-  height: 100%;
-  width: 100%;
-  font-size: 100%; /* Define 1rem como 16px */
-  font-family: sans-serif; /* Escolha genérica de fonte */
-  line-height: 1; /* Remove espaçamento extra entre linhas */
-  background: none;
-  color: inherit;
-}
-
-/* Remove estilos padrões de listas */
-ul, ol {
-  list-style: none;
-}
-
-/* Links sem estilos padrão */
 a {
   text-decoration: none;
-  color: inherit;
+}
+.navbar a,.publications a {
+  color: rgb(15, 20, 25);
 }
 
-/* Imagens e mídia sem comportamentos adicionais */
-img, video, canvas {
-  max-width: 100%;
-  height: auto;
-  display: block;
+.statistics p {
+  color:  rgb(83, 100, 113);
 }
 
-/* Remoção de estilos padrões de botões e inputs */
-button, input, textarea, select {
-  appearance: none;
-  background: none;
-  border: none;
-  font: inherit;
-  color: inherit;
-  padding: 0;
-  margin: 0;
-  outline: none;
-  box-shadow: none;
+.statistics ul li:hover{
+  text-decoration: underline;
 }
 
-/* Tabelas sem espaçamento padrão */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+.statistics a.number{
+  color: rgb(15, 20, 25);
+  font-weight: bold;
 }
-/*****************************************************************************************************/
+
+
+.navbar a, .publications a {
+  padding-bottom: 1%;
+}
+
+.navbar li:hover,.publications li:hover {
+  background-color: rgba(15, 25, 20, 0.1);
+  border-radius: 8px 8px;;
+}
+
+.actions a {
+  color: rgb(83, 100, 113);
+  border-radius: 10%;
+}
+
+.actions a.ReplyShare:hover {
+  background-color: rgba(29, 155, 240, 0.1);
+  color: rgba(29, 155, 240, 1);
+}
+
+.actions a.Retzeet:hover {
+  background-color: rgba(0, 186, 124, 0.1);
+  color:  rgba(0, 186, 124, 1);
+}
+
+.actions a.Like:hover {
+  background-color: rgba(249, 24, 128, 0.1);
+  color:  rgba(249, 24, 128, 1);
+}
+
+.nome {
+  color: rgb(15, 20, 25);
+}
+
+.user {
+  color: rgb(83, 100, 113);
+}
+
+.main-container .description {
+  color: rgb(15, 20, 25);
+}
+
+.main-container div .datalocalidade{
+  color: rgb(83, 100, 113);
+}
+
+.tzeet .data {
+  color: rgb(83, 100, 113);
+}
+
+.tzeet .conteudo {
+  color: rgb(15, 20, 25);
+}
+
+.tzeet:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+
