@@ -1,0 +1,57 @@
+/* Reset CSS*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Reset para body e elementos principais */
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%; /* Define 1rem como 16px */
+  font-family: sans-serif; /* Escolha genérica de fonte */
+  line-height: 1; /* Remove espaçamento extra entre linhas */
+  background: none;
+  color: inherit;
+}
+
+/* Remove estilos padrões de listas */
+ul, ol {
+  list-style: none;
+}
+
+/* Links sem estilos padrão */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Imagens e mídia sem comportamentos adicionais */
+img, video, canvas {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Remoção de estilos padrões de botões e inputs */
+button, input, textarea, select {
+  appearance: none;
+  background: none;
+  border: none;
+  font: inherit;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-shadow: none;
+}
+
+/* Tabelas sem espaçamento padrão */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*****************************************************************************************************/
