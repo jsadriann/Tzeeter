@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
+        <nav class="navbar item-1">
             <ul>
                 <li>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="navbar icon" viewBox="0 0 16 16">
@@ -52,44 +52,52 @@
                         <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
                       </svg>
                     <a href="" class="navbar item">More</a></li>
+                <li>
+                    <button type="button" class="button tzeet">Tzeet</button>
+                </li>
             </ul>
-            <button type="button" class="button tzeet">Tzeet</button>
         </nav>
     </header>
 
-    <main class="main-container">
-        <img src="assets/IMG/profile.jpeg" alt="imagem de perfil" width=64 height=64>
-        <button type="button" class="button edit-profile">Edit profile</button>
-        <h4 class="nome">José Adrian</h4>
-        <h5 class="user">@js_adryan</h5>
-        <p class="description">essa é uma breve descrição sobre esse perfil</p>
-        <div>
-            <ul>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="datalocalidade icon" viewBox="0 0 16 16">
-                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
-                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
-                      </svg>
-                    <a href="" class="datalocalidade">Quixadá</a>
-                </li>
-                <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="datalocalidade icon" viewBox="0 0 16 16">
-                        <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
-                      </svg>
-                    <a href="" class="datalocalidade">Joined february 2024</a>
-                </li>
-            </ul>
+    <main class="main-container item-2">
+        <div class="container-profile">
+            <div class="profile-profile">
+                <img src="assets/IMG/profile.jpeg" alt="imagem de perfil" width="64" height="64">
+                <button type="button" class="button edit-profile">Edit profile</button>
+            </div>
+            <div class="profile-name">
+                <h4 class="nome">José Adrian</h4>
+                <h5 class="user">@js_adryan</h5>
+                <p class="description">Essa é uma breve descrição sobre esse perfil</p>
+            </div>
+            <div class="profile-datalocalidade">
+                <ul>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="datalocalidade icon" viewBox="0 0 16 16">
+                            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                        </svg>
+                        <a href="" class="datalocalidade">Quixadá</a>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="datalocalidade icon" viewBox="0 0 16 16">
+                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+                        </svg>
+                        <a href="" class="datalocalidade">Joined february 2024</a>
+                    </li>
+                </ul>
+            </div>
+            <nav class="statistics">
+                <ul>
+                    <li>
+                        <a href="" class="number">Following</a>
+                    </li>
+                    <li>
+                        <a href="" class="number">Followers</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav class="statistics">
-            <ul>
-                <li>
-                    <a href="" class="number">98 </a><p>Following</p>
-                </li>
-                <li>
-                    <a href="" class="number">98 </a><p>Followers</p>
-                </li>
-            </ul>
-        </nav>
         <nav class="publications">
             <ul>
                 <li>
@@ -107,11 +115,15 @@
             </ul>
         </nav>
         <section class="tzeet">
-            <img src="assets/IMG/profile.jpeg" alt="imagem de perfil" width=32 height=32>
-            <p class="nome">José Adrian Nascimento Silva</p>
-            <p class="user">@js_adrian</p>
-            <p class="data">Feb 21, 2025</p>
-            <p class="conteudo">isso aqui é um tzeet, contem um texto falando sobre algo</p>
+            <div class="tzeet-item">
+                <img src="assets/IMG/profile.jpeg" alt="imagem de perfil" width=32 height=32>
+                <div>
+                    <p class="nome">José Adrian Nascimento Silva</p>
+                    <p class="user">@js_adrian</p>
+                    <p class="data">Feb 21, 2025</p>
+                    <p class="conteudo">isso aqui éee um aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa tzeet, contem um texto falando sobre algo</p>
+                </div>
+            </div>
             <nav class="actions">
                 <ul>
                     <li>
@@ -149,5 +161,8 @@
            
         </section>
     </main>
+    <div class="item-3">
+        <p>so um teste aqui</p>
+    </div>
 </body>
 </html>
