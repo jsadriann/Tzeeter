@@ -6,6 +6,8 @@ body {
   font-size: 0.7em;
   background-color: white;
   color:  rgb(15, 20, 25);
+  padding: 0;
+  margin: 0 auto;
 }
 
 p {
@@ -27,11 +29,12 @@ a {
 }
 
 .icon {
-  width:10px;
-  height:10px;
+  width:1em;
+  height:1em;
 }
 
 .navbar a{
+  
   color: rgb(15, 20, 25);
 }
 
@@ -43,10 +46,6 @@ a {
   text-decoration: underline;
 }
 
-/*.statistics a.number{
-  color: rgb(15, 20, 25);
-  font-weight: bold;
-}*/
 
 
 .navbar a, .publications a {
@@ -54,49 +53,68 @@ a {
   font-size: 0.8em;
 }
 
-.navbar li:hover {
+.navbar li.ground-black:hover {
   background-color: rgba(15, 25, 20, 0.1);
-  border-radius: 8px 8px;
+  border-radius: 1.4em 1.4em;
+
 }
 
 .actions a {
   color: rgb(83, 100, 113);
-  border-radius: 8px 8px;
+  border-radius: 8px;
+  text-decoration: none;
 }
 
-.actions a.Reply:hover, .actions a.Share:hover {
+.actions li {
+  margin: .2em;
+
+}
+
+.actions li a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.actions li a svg {
+  width: .7em;
+  right: .4em;
+  padding:0 .2em;
+}
+
+.actions li a span {
+  font-size: .7em;
+}
+
+.actions li a.Reply:hover svg, .actions li a.Shere:hover svg {
+  border-radius: 50%;
+  color: rgba(29, 155, 240, 1);
   background-color: rgba(29, 155, 240, 0.1);
+}
+
+.actions li a.Reply:hover span {
   color: rgba(29, 155, 240, 1);
 }
 
-.actions a.Share::after{
-  content: "100";
-  font-size: 0.6em;
+.actions li a.Retzeet:hover svg {
+  border-radius: 50%;
+  color: rgba(0, 186, 124, 1);
+  background-color:  rgba(0, 186, 124, 0.1);
 }
 
-.actions a.Reply::after{
-  content: "20";
-  font-size: 0.6em;
+.actions li a.Retzeet:hover span {
+  color: rgba(0, 186, 124, 1);
 }
 
-.actions a.Like::after{
-  content: "2k";
-  font-size: 0.6em;
-}
-
-.actions a.Retzeet::after{
-  content: "400";
-  font-size: 0.6em;
-}
-
-.actions a.Retzeet:hover {
-  background-color: rgba(0, 186, 124, 0.1);
-  color:  rgba(0, 186, 124, 1);
-}
-
-.actions a.Like:hover {
+.actions li a.Like:hover svg {
+  border-radius: 50%;
+  color: rgba(249, 24, 128, 1);
   background-color: rgba(249, 24, 128, 0.1);
-  color:  rgba(249, 24, 128, 1);
+}
+
+.actions li a.Like:hover span {
+  color: rgba(249, 24, 128, 1);
 }
 
 .nome {
@@ -134,25 +152,36 @@ a {
 
 body {
   display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-columns: 1fr 4fr 1.5fr;
 }
 
 .navbar.item-1{
   display: grid;
-  justify-items: center;
+  grid-template-rows: auto 1fr;
+  justify-content: center;
+  padding-top: .4em;
+
+}
+
+.navbar.item-1 li {
+  padding-left: 0.2em;
+  padding-top: .2em;
+  align-items: center;
 }
 
 .navbar.item-1 button {
   width: 100%;
-  height: .8rem;
+  height: 1rem;
 }
 
+.navbar.item-1 button svg {
+  display: none;
+}
 
 .profile-profile {
   display: grid;
   grid-template-columns: auto 1fr; /* Primeira coluna para a imagem, segunda para o botão */
-  align-items: start; /* Alinha os itens verticalmente no topo */
-  gap: 10px; /* Espaçamento entre os itens */
+  align-items: start; /* Alinha os itens verticalmente no topo */ /* Espaçamento entre os itens */
   justify-content: space-between;
   padding: 10px;
 }
@@ -160,8 +189,8 @@ body {
 /* Imagem - arredondada */
 .profile-profile img {
   border-radius: 50%; /* Torna a imagem arredondada */
-  width: 64px; /* Largura fixa */
-  height: 64px; /* Altura fixa */
+  width: 5rem; 
+  height: 5rem; 
   object-fit: cover; /* Garante que a imagem se ajuste dentro do círculo sem distorcer */
 }
 
@@ -178,6 +207,7 @@ button {
   border: none; /* Remove bordas do botão */
   border-radius: 15px 15px; /* Bordas arredondadas */
   cursor: pointer; /* Mostra que é clicável */
+  height: 2.5em;
 }
 
 .button.tzeet:hover, button:hover {
@@ -263,7 +293,7 @@ button {
 
 
 .publications ul li:hover{
-  background-color: rgb(83, 100, 113, 0.3);
+  background-color: rgb(83, 100, 113, 0.2);
 }
 
 .tzeet-item {
@@ -280,6 +310,7 @@ button {
 }
 
 .tzeet-item div p {
+  display: inline-block;
   margin: 0;
   padding: 0; /* Remove os espaços extras de margens e padding */
 }
@@ -296,17 +327,10 @@ button {
   width: 100%;
 }
 
-.tzeet-item div p{
-  display: inline-block;
-}
-
-
 .tzeet-item p.conteudo {
   width: 100%; /* Garante que o último parágrafo ocupe a linha inteira */
   margin-top: 10px; /* Espaçamento entre os parágrafos */
 }
-
-
 
 .actions ul {
   display: flex; /* Coloca os itens em linha */
@@ -314,7 +338,7 @@ button {
   padding: 0 10px; /* Adiciona 8px de padding nas extremidades */
   margin: 0; /* Remove margens */
   list-style: none; /* Remove marcadores */
-  background-color: rgb(83, 100, 113, 0.3);
+  background-color: rgb(83, 100, 113, 0.1);
 }
 
 .actions li {
@@ -326,14 +350,183 @@ button {
   display: inline-flex; /* Faz com que o link se comporte como bloco em linha */
   align-items: center; /* Alinha o conteúdo no centro verticalmente */
   justify-content: center; /* Centraliza o conteúdo dentro do link */
+  text-align: center;
+  height: 100%;
 }
 
 
+/* Estilo geral do container */
+.item-3 {
+  display: flex; /* Flex para dispor os itens em linha */
+  flex-direction: column; /* Disposição vertical dos itens */
+  justify-content: flex-start; /* Alinha os itens verticalmente */
+  align-items: stretch; /* Garante que todos os itens ocupem a largura do contêiner */
+  background-color: rgba(255, 255, 255, 0.8); /* Fundo translúcido */
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%; /* Para garantir que ocupe 100% do espaço disponível */
+  max-width: 600px; /* Limite máximo de largura */
+  box-sizing: border-box; /* Inclui o padding e a borda no cálculo da largura */
+}
+
+/* Estilo do input */
+.item-3 input[type="text"] {
+  width: 100%; /* Ocupa toda a largura */
+  padding: 10px 30px 10px 30px; /* Espaço para a lupa */
+  border-radius: 20px 20px;
+  border: 1px solid #ccc;
+  background-color: rgba(240, 240, 240, 0.8); /* Fundo translúcido */
+  font-size: 16px;
+  position: relative; /* Necessário para a lupa */
+  box-sizing: border-box; /* Inclui o padding no cálculo do tamanho */
+}
+
+/* Lupa dentro do input */
+.item-3 input[type="text"]::placeholder {
+  color: #888;
+}
+
+/* Estilo da lista */
+.item-3.list {
+  margin-top: 10px;
+  background-color: rgba(240, 240, 240, 0.8); /* Fundo translúcido */
+  padding: 12px;
+  border-radius: 12px;
+  width: 100%;
+  box-sizing: border-box; /* Inclui o padding no cálculo do tamanho */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilo do item da lista */
+.item-3.list ul {
+  list-style-type: none;
+  margin-left: .5em;
+  width: 100%;
+}
+
+/* Item da lista */
+.item-3.list li {
+  display: grid;
+  grid-template-columns: 16% 35% 49%;
+  align-items:flex-end;
+  align-items: flex-end; /* Alinha os itens ao final do contêiner verticalmente */
+  margin-bottom: .5em;
+  margin-right: 1em;
+  width: 100%;
+  box-sizing: border-box;
+  gap: 10px;
+}
+
+
+.item-3.list h4 {
+  margin-top:0.2em;
+  margin-bottom: 0.1em;
+}
+/* Alinhamento do primeiro item */
+.item-3.list li:first-child {
+  justify-content: flex-start;
+}
+
+/* Alinhamento do segundo item */
+.item-3.list li:nth-child(2){
+  margin-right: 10%; /* Maior distância à direita */
+
+}
+
+/* Alinhamento do último item */
+.item-3.list li:last-child {
+  margin-left: auto; /* Alinha o último item à direita */
+}
+
+/* Estilo da imagem */
+.item-3.list img {
+  border-radius: 50%; /* Imagem arredondada */
+  margin-right: 10px;
+}
+
+.item-3.list a {
+  color: #007bff; /* Cor azul */
+  text-decoration: underline; /* Sublinhado */
+  margin-right: 10px;
+  font-size: .8em;
+  text-align: center;
+}
+
+/* Estilo do botão */
+.item-3.list button {
+  padding: 5px 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #007bff; /* Cor de fundo do botão */
+  color: white; /* Cor do texto */
+  border: none; /* Remove bordas do botão */
+  cursor: pointer; 
+  height: 70%;
+  max-width: 70% ;
+}
+
+
+/* Estilo para "Mostrar mais" */
+.item-3.list a:last-child {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  text-align: start;
+}
+
+/*****************************************************/
+/*                 MEDIA QUERIES                     */
+/*****************************************************/
+
+@media (max-width: 768px) {
+
+  body {
+    grid-template-columns: 1fr 9fr;
+    padding-right: 10px;
+  }
+  .item-3 {
+    display: none;
+  }
+}
+
+@media (max-width: 926px){
+
+  .navbar a span, .navbar button span {
+    display: none;
+  }
+
+  .navbar.item-1 li svg {
+    display: grid;
+    width: 25px;
+    height: 25px;
+  }
+
+  .navbar.item-1 button {
+    padding: 20%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  .navbar.item-1 li:hover {
+    background-color: white;
+  }
+
+  .navbar.item-1 li.ground-black:hover svg {
+    color: white;
+  }
+
+  .navbar.item-1 li.ground-black {
+    padding-top: .6em;
+  } 
+
+  .navbar.item-1 li.ground-black:hover {
+    background-color: rgba(0, 0, 0, .8);
+    padding: .4em;
+    border-radius: 50%;
+  }
 
 
 
-
-
-
-
-
+}
